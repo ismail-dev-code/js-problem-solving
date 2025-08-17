@@ -18,7 +18,12 @@ function countVowels(str) {
 //3: Check for Palindrome
 function isPalindrome(str) {
   let reversed = str.split("").reverse().join("");
-  return str === reversed;
+
+  if (str === reversed) {
+    return true;  
+  } else {
+    return false; 
+  }
 }
 // console.log(isPalindrome("madam"));
 // console.log(isPalindrome("hello"));
