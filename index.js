@@ -23,4 +23,13 @@ function isPalindrome(str) {
 // console.log(isPalindrome("madam"));
 // console.log(isPalindrome("hello")); 
 
+// Problem 4: Find the Maximum Number
+function findMax(arr) {
+  let max = arr[0];
+  for (let num of arr) {
+    if (num > max) max = num;
+  }
+  return max;
+}
+// console.log(findMax([5, 1, 19, 3]));
 
