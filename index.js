@@ -55,3 +55,13 @@ function findEvenNumbers(arr) {
   return arr.filter(num => num % 2 === 0);
 }
 // console.log(findEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+
+// Problem 8: Capitalize First Letter of Each Word
+function capitalizeWords(str) {
+  return str
+    .split(" ")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+console.log(capitalizeWords("hello world"));
