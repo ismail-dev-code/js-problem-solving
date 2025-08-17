@@ -64,4 +64,14 @@ function capitalizeWords(str) {
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
 }
-console.log(capitalizeWords("hello world"));
+// console.log(capitalizeWords("ismail hossain"));
+
+// Problem 9: Find the Factorial of a Number
+function factorial(n) {
+  let result = 1;
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+console.log(factorial(5));
